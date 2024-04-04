@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Shardify</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./img/logo.svg" alt="Logo" /> Shardify</div>
+
+      <div class="telegram">
+        <a href="https://t.me/notcoin_support_ru" target="_blank"
+          ><img src="./img/telegram.svg" alt="Telegram"
+        /></a>
+      </div>
+    </header>
+    <div class="pool">
+      <div class="pool-card">
+        <img class="coin" width="50px" src="./img/coin.png" alt="" />
+        <h2>Notcoin Pre-Market</h2>
+        <div class="pool-info">
+          <div class="info">
+            <h4>10M</h4>
+            <p>wNOT / nft</p>
+          </div>
+          <div class="info">
+            <h4>532.6B</h4>
+            <p>wNOT supply</p>
+          </div>
+          <div class="info">
+            <h4>10M</h4>
+            <p>NFTs locked</p>
+          </div>
+        </div>
+        <div class="pool-adress">
+          <p>
+            Notcoin Pre-Market vouchers represent the in-game Notcoin currency,
+            which can be exchanged for $NOT after a token generation event.
+            Please note: For better convenience, we may remove some zeros from
+            the Notcoin balances and vouchers when converting to $NOT (no one
+            likes counting 0.00...zeros in the price of a token, isn’t it?).
+            It's a visual change that will not affect the user's wealth value.
+          </p>
+          <div class="adress">
+            <p>Address</p>
+            <p>UQCI...azbk</p>
+          </div>
+          <div class="adress">
+            <p>Collection</p>
+            <p>UQDm...YHFT</p>
+          </div>
+          <div class="adress">
+            <p>Jetton</p>
+            <p>wNOT</p>
+          </div>
+          <div class="pool-item">
+            <a class="pool-links" target="_blank" href="https://t.me/notcoin">
+              <img src="./img/tl.svg" alt="" />
+              <div>@notcoin</div>
+            </a>
+            <a
+              class="pool-links"
+              target="_blank"
+              href="https://t.me/notcoin_fam"
+            >
+              <img src="./img/tl.svg" alt="" />
+              <div>@notcoin_fam</div>
+            </a>
+            <a
+              class="pool-links"
+              target="_blank"
+              href="https://twitter.com/thenotcoin"
+            >
+              <img src="./img/theNotcoin.svg" alt="" />
+              <div>@thenotcoin</div>
+            </a>
+            <a
+              class="pool-links"
+              target="_blank"
+              href="https://notcoin.notion.site/Notcoin-Pre-Market-9cbf7ad8045f4956bb5156db5df23755"
+            >
+              <img src="./img/browser.svg" alt="" />
+              <div>@notcoin.notion.site</div>
+            </a>
+            <a
+              class="pool-links"
+              target="_blank"
+              href="https://getgems.io/collection/EQDmkj65Ab_m0aZaW8IpKw4kYqIgITw_HRstYEkVQ6NIYCyW"
+            >
+              <img src="./img/5.svg" alt="" />
+              <div>@Getgems</div>
+            </a>
+          </div>
+        </div>
+        <div class="pool-btns">
+          <a href="page.html" class="btn">Add your NFTs</a>
+          <a
+            href="https://app.ston.fi/swap?chartVisible=false&chartInterval=1w&ft=wNOT&tt=TON&fa=10000000"
+            target="_blank"
+            class="btn btn2"
+            >Trade on STON.fi</a
+          >
+        </div>
+      </div>
+      <div class="pool-list"></div>
+    </div>
+    <script>
+      const poolList = document.querySelector(".pool-list");
+      const html = `<div class="card">
+    <img src="./img/10mil.png" alt="" />
+    <div class="card-text">10M Notcoin Voucher</div>
+  </div>`;
+      for (let i = 0; i < 100; i++) {
+        poolList.insertAdjacentHTML("beforeend", html);
+      }
+    </script>
+  </body>
+</html>

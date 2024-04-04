@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shardify</title>
+    <link rel="stylesheet" href="./css/page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <div class="logo"><img src="./img/logo.svg" alt="Logo" /> Shardify</div>
+      </a>
+
+      <div class="telegram">
+        <a href="https://web.telegram.org/a/" target="_blank"
+          ><img src="./img/telegram.svg" alt="Telegram"
+        /></a>
+      </div>
+    </header>
+    <div class="copied"><span>Copied</span></div>
+    <div class="content">
+      <div class="address">
+        <div class="one">1</div>
+        <h2 class="address-title">Send your voucher to:</h2>
+        <div class="addres-text">
+          <p>UQDVKRhTD3x3ho78ZAZ9H8PNc14BV0jc3C8HVWaPZz_Kul3k</p>
+        </div>
+        <div>
+          <button class="btn">
+            <img width="30px" src="./img/copy.svg" alt="copy" />
+          </button>
+        </div>
+      </div>
+      <div class="address main">
+        <div class="one">2</div>
+        <h2 class="address-title">You receive:</h2>
+        <div class="blog">
+          <h3 class="blog-title">
+            <img width="32px" src="./img/ton.png " alt="ton" />
+            10,000,000 wNOT (69.21$)
+          </h3>
+          <h4 class="blog-or">or</h4>
+
+          <h3>
+            <img
+              class="tron"
+              width="30px"
+              src="./img/tron.png"
+              alt="tron"
+            />13,464194 TON (69.15$)
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector(".btn");
+      btn.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "UQDVKRhTD3x3ho78ZAZ9H8PNc14BV0jc3C8HVWaPZz_Kul3k"
+        );
+        document.querySelector(".copied").classList.add("copied--active");
+        setTimeout(() => {
+          document.querySelector(".copied").classList.remove("copied--active");
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
